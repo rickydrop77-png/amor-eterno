@@ -1,152 +1,83 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Para Minha Eterna Namorada ❤️</title>
-
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-body{
-font-family:Arial, sans-serif;
-background:linear-gradient(135deg,#ff4d6d,#ff758f,#ffc2d1);
-min-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-overflow:hidden;
-}
-
-.container{
-max-width:900px;
-width:90%;
-text-align:center;
-padding:30px;
-background:rgba(255,255,255,0.15);
-backdrop-filter:blur(10px);
-border-radius:30px;
-box-shadow:0 0 30px rgba(0,0,0,0.2);
-}
-
-h1{
-font-size:3rem;
-color:white;
-margin-bottom:10px;
-text-shadow:0 0 15px rgba(255,255,255,0.7);
-}
-
-h2{
-color:white;
-font-size:1.5rem;
-margin-bottom:25px;
-font-weight:300;
-}
-
-.foto{
-width:100%;
-max-width:450px;
-border-radius:25px;
-border:5px solid white;
-box-shadow:0 0 30px rgba(255,255,255,0.6);
-margin-bottom:25px;
-}
-
-.mensagem{
-color:white;
-font-size:1.2rem;
-line-height:1.8;
-margin-bottom:25px;
-}
-
-audio{
-width:100%;
-max-width:500px;
-}
-
-.heart{
-position:absolute;
-font-size:25px;
-animation:subir 10s linear infinite;
-opacity:0.7;
-}
-
-@keyframes subir{
-0%{
-transform:translateY(100vh);
-opacity:0;
-}
-10%{
-opacity:1;
-}
-100%{
-transform:translateY(-120vh);
-opacity:0;
-}
-}
-
-</style>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para Minha Eterna Namorada ❤️</title>
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+    body{
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg,#ff4d6d,#ff758f,#ffc2d1);
+      min-height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+    }
+    .recipiente{
+      max-width:900px;
+      width:90%;
+      text-align:center;
+      padding:30px;
+      background: rgba(255,255,255,0.2);
+      border-radius:20px;
+      backdrop-filter: blur(10px);
+    }
+    h1{
+      font-size:2.5em;
+      color:white;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+      margin-bottom:10px;
+    }
+    p{
+      color:white;
+      font-size:1.2em;
+      margin-bottom:20px;
+    }
+    img{
+      max-width:300px;
+      width:80%;
+      border-radius:15px;
+      margin-bottom:20px;
+    }
+    audio{
+      width:80%;
+      outline:none;
+    }
+    /* corações animados */
+    .coracao{
+      position:absolute;
+      font-size:24px;
+      animation: float 5s linear infinite;
+    }
+    @keyframes float{
+      0%{transform: translateY(0) translateX(0);}
+      50%{transform: translateY(-50px) translateX(20px);}
+      100%{transform: translateY(-100px) translateX(0);}
+    }
+  </style>
 </head>
-
 <body>
+  <div class="recipiente">
+    <h1>❤️ Feliz Dia dos Namorados ❤️</h1>
+    <p>Para Minha Eterna Namorada 💖</p>
+    <img src="c.gu-128.jpg" alt="Nossa Foto">
+    <p>Você é o melhor presente que a vida me deu. ❤️ Cada momento ao seu lado se torna especial e inesquecível. Obrigado por fazer parte da minha história. Te amo hoje, amanhã e para sempre. ❤️</p>
+    <audio controls>
+      <source src="Ruth B. - Dandelions (Audio).mp3" type="audio/mpeg">
+      Seu navegador não suporta áudio.
+    </audio>
+  </div>
 
-<div class="container">
-
-<h1>❤️ Feliz Dia dos Namorados ❤️</h1>
-
-<h2>Para Minha Eterna Namorada 💕</h2>
-
-<img
-class="foto"
-src="https://drive.google.com/uc?export=view&id=18gLIqwPNpoSraiX2tWK3xopPa3TLBqf3"
-alt="Nossa Foto">
-
-<div class="mensagem">
-
-Você é o melhor presente que a vida me deu. 💖
-
-Cada momento ao seu lado se torna especial e inesquecível.
-
-Obrigado por fazer parte da minha história.
-
-Te amo hoje, amanhã e para sempre. ❤️
-
-</div>
-
-<audio controls autoplay loop>
-<source src="https://drive.google.com/uc?export=download&id=1CHJO1n-Fi_mLnzbpah-3OdOSa5sRjyRB" type="audio/mpeg">
-</audio>
-
-</div>
-
-<script>
-
-for(let i=0;i<30;i++){
-
-let heart=document.createElement('div');
-
-heart.classList.add('heart');
-
-heart.innerHTML='❤️';
-
-heart.style.left=Math.random()*100+'vw';
-
-heart.style.animationDuration=(Math.random()*5+5)+'s';
-
-heart.style.fontSize=(Math.random()*30+20)+'px';
-
-document.body.appendChild(heart);
-
-}
-
-</script>
-
+  <!-- corações animados -->
+  <div class="coracao" style="left:10%;top:80%;">❤️</div>
+  <div class="coracao" style="left:30%;top:90%;">❤️</div>
+  <div class="coracao" style="left:50%;top:85%;">❤️</div>
+  <div class="coracao" style="left:70%;top:95%;">❤️</div>
+  <div class="coracao" style="left:90%;top:80%;">❤️</div>
 </body>
 </html>
