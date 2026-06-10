@@ -1,128 +1,67 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Para Minha Eterna Namorada ❤️</title>
-
-<style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-body{
-font-family:Arial,sans-serif;
-background:linear-gradient(135deg,#ff4d6d,#ff758f,#ffc2d1);
-min-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-overflow:hidden;
-}
-
-.container{
-width:90%;
-max-width:900px;
-padding:30px;
-background:rgba(255,255,255,0.20);
-backdrop-filter:blur(10px);
-border-radius:25px;
-text-align:center;
-box-shadow:0 10px 40px rgba(0,0,0,0.2);
-z-index:10;
-}
-
-h1{
-color:white;
-font-size:3rem;
-margin-bottom:10px;
-}
-
-h2{
-color:white;
-font-weight:normal;
-margin-bottom:25px;
-}
-
-.foto{
-width:300px;
-max-width:90%;
-border-radius:20px;
-box-shadow:0 0 20px rgba(255,255,255,0.4);
-margin-bottom:25px;
-}
-
-.mensagem{
-color:white;
-font-size:1.3rem;
-line-height:1.7;
-margin-bottom:30px;
-}
-
-audio{
-width:100%;
-max-width:700px;
-}
-
-.coracao{
-position:absolute;
-font-size:30px;
-animation:subir linear infinite;
-opacity:0.8;
-}
-
-@keyframes subir{
-0%{
-transform:translateY(100vh);
-opacity:0;
-}
-10%{
-opacity:1;
-}
-100%{
-transform:translateY(-120vh);
-opacity:0;
-}
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para Minha Eterna Namorada ❤️</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg,#ff4d6d,#ff758f,#ffc2d1);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+    .recipiente {
+      max-width: 900px;
+      width: 90%;
+      text-align: center;
+      padding: 30px;
+      background: rgba(255, 255, 255, 0.3);
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+    .recipiente img {
+      max-width: 100%;
+      border-radius: 15px;
+      margin: 20px 0;
+    }
+    .recipiente h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      color: #fff;
+      text-shadow: 2px 2px 4px #000;
+    }
+    .recipiente p {
+      font-size: 1.2rem;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+    audio {
+      width: 100%;
+      margin-top: 10px;
+      border-radius: 10px;
+    }
+  </style>
 </head>
-
 <body>
-
-<div class="container">
-
-<h1>❤️ Feliz Dia dos Namorados ❤️</h1>
-
-<h2>Para Minha Eterna Namorada 💖</h2>
-
-<img src="c.gu-128.jpg" class="foto">
-
-<div class="mensagem">
-Você é o melhor presente que a vida me deu. ❤️<br>
-Cada momento ao seu lado se torna especial e inesquecível.<br>
-Obrigado por fazer parte da minha história.<br>
-Te amo hoje, amanhã e para sempre. ❤️
-</div>
-
-<audio controls autoplay loop>
-<source src="https://rickydrop77-png.github.io/amor-eterno/Ruth%20B.%20-%20Dentes-de-le%C3%A3o%20(%C3%81udio).mp3" type="audio/mpeg">
-</audio>
-
-</div>
-
-<script>
-for(let i=0;i<40;i++){
-const c=document.createElement("div");
-c.className="coracao";
-c.innerHTML="❤️";
-c.style.left=Math.random()*100+"vw";
-c.style.animationDuration=(5+Math.random()*8)+"s";
-c.style.fontSize=(20+Math.random()*40)+"px";
-document.body.appendChild(c);
-}
-</script>
-
+  <div class="recipiente">
+    <h1>❤️ Feliz Dia dos Namorados ❤️</h1>
+    <p>Para Minha Eterna Namorada 💖</p>
+    <img src="c.gu-128.jpg" alt="Nossa Foto">
+    <p>Você é o melhor presente que a vida me deu. ❤️ Cada momento ao seu lado se torna especial e inesquecível. Obrigado por fazer parte da minha história. Te amo hoje, amanhã e para sempre. ❤️</p>
+    <audio controls autoplay loop>
+      <source src="musica.mp3" type="audio/mpeg">
+      Seu navegador não suporta o elemento de áudio.
+    </audio>
+  </div>
 </body>
 </html>
